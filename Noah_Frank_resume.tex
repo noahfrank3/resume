@@ -1,0 +1,282 @@
+%-------------------------------------------------------------------------------
+% Resume of Noah Frank - Created in LaTeX
+% Copyright (C) 2025 Noah Frank
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU Affero General Public License as
+% published by the Free Software Foundation, either version 3 of the License,
+% or (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero 
+% General Public License for more details.
+%
+% You should have received a copy of the GNU Affero General Public License
+% along with this program. If not, see <https://www.gnu.org/licenses/>.
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% Template sourced from resume, available at:
+% https://github.com/jakegut/resume
+% Licensed under the MIT License.
+% Modifications and additional content in this file are licensed under AGPL-3.0.
+%-------------------------------------------------------------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeMultipleSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% -----------Project Heading-----------
+%\newcommand{\resumeProjectHeading}[2]{
+%    \item
+%    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%      \small#1 & #2 \\
+%    \end{tabular*}\vspace{-7pt}
+%}
+%-------------------------------------------
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Noah Frank} \\ \vspace{1pt}
+    \small U.S. Citizen $|$
+    \href{tel: +16782326227}{678-232-6227} $|$
+    \href{mailto:noahfrank3@outlook.com}{noahfrank3@outlook.com} $|$ 
+    \href{https://linkedin.com/in/noahfrank1}{linkedin.com/in/noahfrank1} $|$
+    \href{https://github.com/noahfrank3}{github.com/noahfrank3}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducationHeading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Mechanical Engineering (GPA 3.86)}{Jan. 2025 -- Dec. 2025}
+      {Bachelor of Science in Mechanical Engineering (GPA 3.87)}{Aug. 2021 -- Dec. 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LyondellBasell}{Multiple Locations}
+      {Machinery Engineering Co-Op}{May 2024 -- Aug. 2024}
+      \resumeItemListStart
+        \resumeItem{Developed comprehensive job note outlining requirements for \$500k overhaul of 13-ton cooling water pump}
+        \resumeItem{Spearheaded initiative to assess 200 turbines for overspeed protection and trained 3 team members}
+        \resumeItem{Identified and reported exposed fans on 2 fin-fan heat exchangers, eliminating serious field hazard}
+      \resumeItemListEnd
+
+    \resumeMultipleSubheading
+      {Manufacturing Engineering Co-Op}{May 2023 -- Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Designed container yard expansion with AutoCAD, doubling storage capacity to over 400 containers}
+        \resumeItem{Enhanced process water filter design to reduce frequent malfunctions, saving 30 min/shift in downtime}
+        \resumeItem{Conducted safety audit to remediate 4 pellet spills, reducing workplace hazards and environmental runoff}
+        \resumeItem{Redesigned production report and meetings to focus on root causes and broader trends in shutdown events}
+      \resumeItemListEnd
+    
+    \resumeMultipleSubheading
+      {Reliability Engineering Co-Op}{Aug. 2022 -- Dec. 2022}
+      \resumeItemListStart
+      \resumeItem{Completed MOC to add block valves to 2 pulsation dampeners, eliminating nitrogen leaks and vibrations}
+        \resumeItem{Collaborated with vendors to fill in missing BOMs for 50 pumps to allow for accurate inventory management}
+        \resumeItem{Identified and corrected error in major compressor’s BOM, preventing unnecessary \$600k spare parts expenditure}
+        \resumeItem{Validated over 100 P\&IDs for Leak Detection and Repair (LDAR) to reduce Title V deviations}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Georgia Tech Tutoring \& Academic Support}{Atlanta, GA}
+      {Dynamics Learning Assistant}{Aug. 2023 -- Dec. 2024}
+      \resumeItemListStart
+        \resumeItem{Revamped course webpage for clarity and accessibility and created a formula sheet to improve student experience}
+        \resumeItem{Facilitated weekly office hours to support student learning and engagement, helping 10-20 students per week}
+        \resumeItem{Delivered 3 course lectures to 60-student classes, using physical demonstrations to boost engagement}
+      \resumeItemListEnd
+
+% -----------Single Position Heading-----------
+%    \resumeSubheading
+%      {Position}{Dates}
+%      {Company}{Location}
+%      \resumeItemListStart
+%        \resumeItem{Description}
+%        \resumeItem{Description}
+%        \resumeItem{Description}
+%      \resumeItemListEnd
+%-------------------------------------------
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Company}{Dates}
+%     \resumeItemListStart
+%        \resumeItem{Position}
+%          {Description}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Sloshzero} $|$ \emph{Python, Ax, FastAPI, Javascript, CSS, HTML, Git, Docker}}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web app to optimize baffle design for tanker truck trailers}
+            \resumeItem{Implemented multi-objective Bayesian optimization algorithm in Ax with FastAPI for trial deployment}
+            \resumeItem{Designed a JavaScript/CSS/HTML dashboard for scheduling trials and results visualization}
+            \resumeItem{Integrated Git and Docker for streamlined development and deployment}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sleep Stage Classification} $|$ \emph{Python, Scikit-Learn, Optuna, Postgres, Slurm, HDF5, EDF, Git}}
+          \resumeItemListStart
+            \resumeItem{Developed machine learning model for classifying sleep stages using single-channel EEG signals}
+            \resumeItem{Optimized model accuracy and memory usage over multiple classifiers using NSGA-II algorithm in Optuna}
+            \resumeItem{Automated optimization on HPC using batch job scripts and Slurm directives for efficient resource management}
+            \resumeItem{Converted and conditioned EEG signals in EDF format into ready-to-use HDF5 for analysis}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Multi-Purpose Wave Energy Platform}}
+          \resumeItemListStart
+            \resumeItem{Designed offshore platform to harness energy from ocean waves and deliver it to isolated coastal communities}
+            \resumeItem{Managed a 6-person team by delegating responsibilities, setting deadlines, and holding check-in meetings}
+            \resumeItem{Performed dynamics/vibrations analysis to validate the stability and buoyancy of the platform}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, MATLAB, Java, C/C++, Bash, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Libraries/Frameworks}{: FastAPI, Slurm, Dask, Ax, Scikit-Learn, NumPy, Pandas, Matplotlib} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, VS Code, Vim, Linux} \\
+     \textbf{CAD/Engineering}{: Ansys (Workbench), SolidWorks, AutoCAD, Autodesk Inventor, SAP, Bluebeam Revu, MS Excel} \\ % GD\&T, MS Office
+     \textbf{Certifications}{: Lean Six Sigma Green Belt, OSHA 30 Hours, CPR \& AED} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
