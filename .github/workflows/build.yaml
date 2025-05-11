@@ -10,6 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
+      - name: Rename PDF
+        run: mv main.pdf Noah_Frank_resume.pdf
       - name: Get timestamp
         run: echo "TIMESTAMP=$(date +'%Y-%m-%d %T')" >> $GITHUB_ENV
       - name: Release
