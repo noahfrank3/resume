@@ -1,7 +1,7 @@
 # Resume
 
 This repository includes my resume for my career. The resume format is based off of Jake Gutierrez's template, see the [Attribution](#attribution) section for more details. A sample of the resume (v1.0.2, 2025-05-21) is shown below:
-![Resume](assets/Noah_Frank_resume.png)
+![Resume](Noah_Frank_resume.png)
 
 ## Attribution
 
