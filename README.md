@@ -1,6 +1,6 @@
 # Resume
 
-This repository includes my resume for jobs. The resume is based off of Jake Gutierrez's template, see the [Attribution](#attribution) section for more details.
+This repository includes my resume for my career. The resume is based off of Jake Gutierrez's template, see the [Attribution](#attribution) section for more details.
 
 ## Attribution
 
