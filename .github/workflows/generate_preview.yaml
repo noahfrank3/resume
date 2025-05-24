@@ -1,0 +1,40 @@
+name: Generate resume preview PNG
+on:
+  release:
+    types: [published]
+
+jobs:
+  generate_image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt update && sudo apt install -y imagemagick gh
+
+      - name: Load environment variables
+        run: cat .github/workflows/env_vars.env >> $GITHUB_ENV
+
+      - name: Get resume PDF
+        uses: houqp/download-release-assets@v1
+        with:
+          repo: ${{ github.repository }}
+          tag: ${{ github.event.release.tag_name }}
+          file: ${{ env.FIRST_NAME }}_${{ env.LAST_NAME }}_resume.pdf
+
+      - name: Convert PDF to PNG
+        run: magick -density 300 ${{ env.FIRST_NAME }}_${{ env.LAST_NAME }}_resume.pdf -quality 100 -background white -alpha remove -resize 25% resume_preview.png
+
+      - name: Commit PNG to repository
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add resume_preview.png
+          git commit -m "Automated: add resume preview image for latest release"
+          git push
+
+      - name: Update release to track new commit
+        run: gh release edit ${{ github.event.release.tag_name }} --target ${{ github.event.repository.default_branch }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

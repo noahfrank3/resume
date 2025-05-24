@@ -1,22 +1,35 @@
 name: Build PDF and release
-on: push
+on:
+  push:
+    branches:
+      - ${{ github.event.repository.default_branch }}
+    paths-ignore:
+      - resume_preview.png
 
 jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Load environment variables
+        run: cat .github/workflows/env_vars.env >> $GITHUB_ENV
+
       - name: Compile LaTeX
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
+
       - name: Rename PDF
-        run: mv main.pdf Noah_Frank_resume.pdf
+        run: mv main.pdf ${{ env.FIRST_NAME }}_${{ env.LAST_NAME }}_resume.pdf
+
       - name: Get timestamp
         run: echo "TIMESTAMP=$(date +'%Y-%m-%d %T')" >> $GITHUB_ENV
+
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           name: Draft ${{ env.TIMESTAMP }}
-          files: Noah_Frank_resume.pdf
+          files: ${{ env.FIRST_NAME }}_${{ env.LAST_NAME }}_resume.pdf
           draft: true
